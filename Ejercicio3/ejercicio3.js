@@ -23,8 +23,8 @@ function sumaDivisores(numero) {
   }
   
   // Define el rango en el que deseas buscar pares amigables.
-  const rangoInicio = 1000;
-  const rangoFin = 1500;
+  const rangoInicio = 1;
+  const rangoFin = 5000;
   
   const paresEncontrados = encontrarParesAmigables(rangoInicio, rangoFin);
   

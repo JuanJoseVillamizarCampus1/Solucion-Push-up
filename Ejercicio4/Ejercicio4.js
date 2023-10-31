@@ -17,7 +17,7 @@ function main() {
         if (voto === 'A' || voto === 'R' || voto === 'N' || voto === 'B') {
           votos.push(voto);
         } else {
-          alert("Voto no válido. Ingrese A, R, N, B o X.");
+          alert("Voto no válido. A para aceptar, R para rechazar, N para nulo, B para blanco, o X para terminar.");
         }
       }
   
@@ -53,6 +53,7 @@ function main() {
       console.log(`Total de votos: ${universidad.totalVotos}`);
       console.log(`Aceptan: ${universidad.totalAceptar} votos`);
       console.log(`Rechazan: ${universidad.totalRechazar} votos`);
+      console.log(`Votos: ${universidad.votos} votos`);
       console.log('');
     }
   

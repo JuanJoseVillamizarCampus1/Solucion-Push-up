@@ -29,3 +29,15 @@ function fibonacci(n) {
     }
   }
   primerosNumerosFibonacci(10);
+
+
+  let fibonacci = (n)=>{
+    const map = new Map();
+    const formula = (f)=>{
+      if(f<=1) return f;
+      if (!map.has(f)) map.set(f, formula(f-1)+ formula(f-2))
+      return map.get(f)
+    }
+    return formula(n);
+  }
+  console.log(fibonacci(11));
